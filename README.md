@@ -4,11 +4,11 @@ in several languages
 Output looks something like:
 
 ```
-|---------+----------|
-| Elev    | Karakter |
-|---------+----------|
-| Per     | A        |
-| Edvard  | F-       |
-| Asbjørn | B+       |
-|---------+----------|
+|----------+-------|
+| Student  | Grade |
+|----------+-------|
+| James    | A     |
+| Beatrice | F-    |
+| Henry    | B+    |
+|----------+-------|
 ```

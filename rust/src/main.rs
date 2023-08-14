@@ -4,11 +4,8 @@ fn max_widths(header: &Vec<String>, rows: &[Vec<String>]) -> Vec<usize> {
     rows.iter().fold(lengths(header), |acc, row| {
         acc.iter()
             .zip(lengths(row))
-            .map(|(&x, y)| match x.cmp(&y) {
-                std::cmp::Ordering::Greater => x,
-                _ => y,
-            })
-            .collect::<Vec<usize>>()
+            .map(|(&x, y)| std::cmp::max(x, y))
+            .collect()
     })
 }
 
